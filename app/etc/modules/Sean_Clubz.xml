@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Sean_Clubz>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Sean_Clubz>
+    </modules>
+</config>

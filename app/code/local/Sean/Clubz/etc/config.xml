@@ -1,0 +1,33 @@
+<config>
+    <modules>
+        <Sean_Clubz>
+            <version>0.1.0</version>
+        </Sean_Clubz>
+    </modules>
+
+    <global>
+        <blocks>
+            <sean_clubz>
+                <class>Sean_Clubz_Block</class>
+            </sean_clubz>
+        </blocks>
+
+        <helpers>
+            <sean_clubz>
+                <class>Sean_Clubz_Block</class>
+            </sean_clubz>
+        </helpers>
+    </global>
+
+    <frontend>
+        <routers>
+            <seanclubz>
+                <use>standard</use>
+                <args>
+                    <module>Sean_Clubz</module>
+                    <frontName>seanclubz</frontName>
+                </args>
+            </seanclubz>
+        </routers>
+    </frontend>
+</config>

@@ -21,6 +21,6 @@ class Sean_Clubz_Block_Helloworld extends Mage_Core_Block_Template
 
     public function fetchTitle()
     {
-        return 'Hello Fancy World!';
+        return 'Hello Fancy World!!!';
     }
 }

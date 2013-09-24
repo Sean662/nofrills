@@ -1,9 +1,3 @@
 <?php
 
-include_once('app/Mage.php');
-Mage::app();
-
-$object = Mage::getSingleton('catalog/product');
-
-echo '<pre>';
-var_dump($object);
+var_dump(array(1, new stdClass(), array(), '312312321'));

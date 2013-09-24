@@ -12,10 +12,6 @@ class Sean_Clubz_IndexController extends Mage_Core_Controller_Front_Action
     {
         $layout = Mage::getSingleton('core/layout');
         $block  = $layout->createBlock('sean_clubz/helloworld', 'root');
-
-        $layout->addOutputBlock('root');
-        $layout->setDirectOutput(true);
-
-        $layout->getOutput();
+        echo $layout->addOutputBlock('root')->setDirectOutput(false)->getOutput();
     }
 }

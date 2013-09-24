@@ -1,5 +1,6 @@
 .idea
 .modgit/
+app/etc/layout.xml
 app/code/community/Find/
 app/code/community/Phoenix/
 app/code/core/

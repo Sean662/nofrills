@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <catalog>
+            <children>
+                <gorillaeducation_productcomments_comments translate="title" module="gorillaeducation_productcomments">
+                    <title>Product comments</title>
+                    <action>adminhtml/comments</action>
+                    <sort_order>10</sort_order>
+                </gorillaeducation_productcomments_comments>
+            </children>
+        </catalog>
+    </menu>
+
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <gorillaeducation_productcomments_comments>
+                                <title>Product comments</title>
+                                <sort_order>10</sort_order>
+                            </gorillaeducation_productcomments_comments>
+                        </children>
+                    </catalog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

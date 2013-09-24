@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gorillaeducation_Statediscounts>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Gorillaeducation_Statediscounts>
+    </modules>
+</config>

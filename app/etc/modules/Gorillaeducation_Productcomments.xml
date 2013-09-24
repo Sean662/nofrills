@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gorillaeducation_Productcomments>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Gorillaeducation_Productcomments>
+    </modules>
+</config>

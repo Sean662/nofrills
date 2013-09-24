@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gorillaeducation_Productcomments>
+            <version>0.1.0</version>
+        </Gorillaeducation_Productcomments>
+    </modules>
+
+    <global>
+        <helpers>
+            <gorillaeducation_productcomments>
+                <class>Gorillaeducation_Productcomments_Helper</class>
+            </gorillaeducation_productcomments>
+        </helpers>
+
+        <blocks>
+            <gorillaeducation_productcomments>
+                <class>Gorillaeducation_Productcomments_Block</class>
+            </gorillaeducation_productcomments>
+        </blocks>
+
+        <models>
+            <gorillaeducation_productcomments>
+                <class>Gorillaeducation_Productcomments_Model</class>
+                <resourceModel>gorillaeducation_productcomments_resource</resourceModel>
+            </gorillaeducation_productcomments>
+
+            <gorillaeducation_productcomments_resource>
+                <class>Gorillaeducation_Productcomments_Model_Resource</class>
+                <entities>
+                    <comments>
+                        <table>gorillaeducation_productcomments_comments</table>
+                    </comments>
+                </entities>
+            </gorillaeducation_productcomments_resource>
+        </models>
+
+        <resources>
+            <gorillaeducation_productcomments_setup>
+                <setup>
+                    <module>Gorillaeducation_Productcomments</module>
+                </setup>
+            </gorillaeducation_productcomments_setup>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Gorillaeducation_Productcomments before="Mage_Adminhtml">Gorillaeducation_Productcomments_Adminhtml</Gorillaeducation_Productcomments>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <gorillaeducation_productcomments>
+                    <file>gorillaeducation/productcomments.xml</file>
+                </gorillaeducation_productcomments>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

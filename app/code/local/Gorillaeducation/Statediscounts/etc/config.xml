@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gorillaeducation_Statediscounts>
+            <version>0.1.2</version>
+        </Gorillaeducation_Statediscounts>
+    </modules>
+
+    <global>
+        <helpers>
+            <gorillaeducation_statediscounts>
+                <class>Gorillaeducation_Statediscounts_Helper</class>
+            </gorillaeducation_statediscounts>
+        </helpers>
+
+        <blocks>
+            <gorillaeducation_statediscounts>
+                <class>Gorillaeducation_Statediscounts_Block</class>
+            </gorillaeducation_statediscounts>
+
+            <adminhtml>
+                <rewrite>
+                    <sales_order_totals>Gorillaeducation_Statediscounts_Block_Adminhtml_Sales_Order</sales_order_totals>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+
+        <models>
+            <gorillaeducation_statediscounts>
+                <class>Gorillaeducation_Statediscounts_Model</class>
+                <resourceModel>gorillaeducation_statediscounts_mysql4</resourceModel>
+            </gorillaeducation_statediscounts>
+
+            <gorillaeducation_statediscounts_mysql4>
+                <class>Gorillaeducation_Statediscounts_Model_Resource</class>
+                <entities>
+                    <discounts>
+                        <table>gorillaeducation_statediscounts_discounts</table>
+                    </discounts>
+                </entities>
+            </gorillaeducation_statediscounts_mysql4>
+        </models>
+
+        <sales>
+            <quote>
+                <totals>
+                    <state>
+                        <class>gorillaeducation_statediscounts/sales_quote_address_total_state</class>
+                        <after>subtotal</after>
+                        <before>tax</before>
+                    </state>
+                </totals>
+            </quote>
+        </sales>
+
+        <fieldsets>
+            <sales_convert_quote_address>
+                <statediscount_amount><to_order>*</to_order></statediscount_amount>
+                <base_statediscount_amount><to_order>*</to_order></base_statediscount_amount>
+            </sales_convert_quote_address>
+        </fieldsets>
+
+        <resources>
+            <gorillaeducation_statediscounts_setup>
+                <setup>
+                    <module>Gorillaeducation_Statediscounts</module>
+                </setup>
+            </gorillaeducation_statediscounts_setup>
+        </resources>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Gorillaeducation_Statediscounts before="Mage_Adminhtml">Gorillaeducation_Statediscounts_Adminhtml</Gorillaeducation_Statediscounts>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <gorillaeducation_statediscounts>
+                    <file>gorillaeducation/statediscounts.xml</file>
+                </gorillaeducation_statediscounts>
+            </updates>
+        </layout>
+    </adminhtml>
+</config>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sales>
+            <children>
+                <gorillaeducation_statediscounts_discounts translate="title" module="gorillaeducation_statediscounts">
+                    <title>State's discounts</title>
+                    <action>adminhtml/discounts</action>
+                </gorillaeducation_statediscounts_discounts>
+            </children>
+        </sales>
+    </menu>
+
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <sales>
+                        <children>
+                            <gorillaeducation_statediscounts_discounts>
+                                <title>State's discounts</title>
+                            </gorillaeducation_statediscounts_discounts>
+                        </children>
+                    </sales>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

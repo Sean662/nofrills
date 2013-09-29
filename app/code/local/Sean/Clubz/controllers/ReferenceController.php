@@ -56,4 +56,12 @@ class Sean_Clubz_ReferenceController extends Mage_Core_Controller_Front_Action
         $updateFiles[] = 'local.xml';
         var_dump($updateFiles);
     }
+
+    public function handleAction()
+    {
+        $this->loadLayout();
+        $handles = Mage::getSingleton('core/layout')->getUpdate()->getHandles();
+        var_dump($handles);
+        exit;
+    }
 }

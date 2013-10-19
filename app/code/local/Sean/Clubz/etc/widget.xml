@@ -1,0 +1,8 @@
+<widgets>
+    <sean_clubz_youtube type="sean_clubz/youtube">
+        <name>YouTube Example Widget</name>
+        <description type="desc">
+            This wiget displays a YouTube video .
+        </description>
+    </sean_clubz_youtube>
+</widgets>
